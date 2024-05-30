@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">ProyectoMoviles</string>
+    <string name="title">Trabajos</string>
+    <string name="subtitle_pendientes">Pendientes</string>
+    <string name="subtitle_finalizados">Finalizados</string>
+    <string name="txt_opt_seleccionar_prioridad">Selecciona una prioridad</string>
+    <string name="txt_opt_ordenar_prioridad">Ordenar por prioridad</string>
+    <string name="txt_tiempo">Tiempo empleado</string>
+    <string name="txt_finalizar">Finalizar trabajo</string>
+    <string name="txt_login">Login:</string>
+    <string name="txt_id_trabajador">Introduce tu ID</string>
+    <string name="txt_password">Contraseña:</string>
+    <string name="txt_introduce_password">Introduce tu contraseña</string>
+    <string name="txt_acceder">Acceder</string>
+    <string name="txt_recordar">Recordar usuario</string>
+    <string name="txt_cod_trabajo">Código trabajo</string>
+    <string name="txt_categoria">Categoria</string>
+    <string name="txt_descripcion">Descripción</string>
+    <string name="txt_fec_ini">Fecha de inicio</string>
+    <string name="txt_fec_fin">Fecha de finalización</string>
+    <string name="txt_prioridad">Prioridad del trabajo</string>
+
+
 </resources>

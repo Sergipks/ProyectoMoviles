@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary"
+    tools:context=".ui.main.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:liftOnScroll="true">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/mToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/OverlayToolbar"
+            app:subtitleCentered="false"
+            app:subtitleTextColor="?attr/colorOnPrimary"
+            app:title="@string/app_name"
+            app:titleCentered="false"
+            app:titleTextColor="?attr/colorOnPrimary" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp"
+        android:orientation="vertical"
+        android:padding="2dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_border"
+            android:baselineAligned="false"
+            android:orientation="vertical"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:id="@+id/tvCodTrabajo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="@string/txt_cod_trabajo" />
+
+            <TextView
+                android:id="@+id/tvCategoria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="@string/txt_categoria" />
+
+            <TextView
+                android:id="@+id/tvDescripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="@string/txt_descripcion" />
+
+            <TextView
+                android:id="@+id/tvFecIni"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="@string/txt_fec_ini" />
+
+            <TextView
+                android:id="@+id/tvFecFin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="@string/txt_fec_fin" />
+
+            <TextView
+                android:id="@+id/tvTiempo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="@string/txt_tiempo" />
+
+            <TextView
+                android:id="@+id/tvPrioridad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="@string/txt_prioridad" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

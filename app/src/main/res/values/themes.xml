@@ -3,7 +3,14 @@
     <style name="Base.Theme.ProyectoMoviles" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/grey</item>
+
     </style>
 
     <style name="Theme.ProyectoMoviles" parent="Base.Theme.ProyectoMoviles" />
+
+    <style name="OverlayToolbar" parent="ThemeOverlay.MaterialComponents.Toolbar.Primary">
+        <!-- Color utilizado para el navigation icon y overflow icon -->
+        <item name="colorOnPrimary">@color/white</item>
+    </style>
 </resources>
