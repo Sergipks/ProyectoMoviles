@@ -18,8 +18,8 @@ class Retrofit2Api {
 
 interface Retrofit2ApiInterface {
     @GET("trabajos/pendientes/trabajador") // http:localhost:8080/api/trabajos/pendientes/trabajador?idTrabajador=11111&contraseña=1234
-    suspend fun getTrabajosPendientes(@Query("trabajador") idTrabajador: Int, @Query("contraseña") password: String): List<Trabajos>
+    suspend fun getTrabajosPendientes(@Query("trabajador") idTrabajador: Int, @Query("contraseña") password: String): Trabajos
 
     @GET("trabajos/finalizados/trabajador") // http:localhost:8080/api/trabajos/finalizados/trabajador?idTrabajador=11111&contraseña=1234
-    suspend fun getTrabajosFinalizados(@Query("trabajador") idTrabajador: Int, @Query("contraseña") password: String): List<Trabajos>
+    suspend fun getTrabajosFinalizados(@Query("trabajador") idTrabajador: Int, @Query("contraseña") password: String): Trabajos
 }
