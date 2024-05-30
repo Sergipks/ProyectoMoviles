@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "edu.joverpenalva.proyectomoviles.app-mergeDebugResources-38:/values-port/values-port.xml",
+            "map": [
+                {
+                    "source": "/Users/jorgejoverpenalva/.gradle/caches/transforms-4/b00d47b964504319f0f121f109c3ec8f/transformed/appcompat-1.6.1/res/values-port/values-port.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                }
+            ]
+        }
+    ]
+}
