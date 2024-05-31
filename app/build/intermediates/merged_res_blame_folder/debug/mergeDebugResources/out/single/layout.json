@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "edu.joverpenalva.proyectomoviles.app-mergeDebugResources-39:/layout/activity_login.xml",
+        "source": "edu.joverpenalva.proyectomoviles.app-main-42:/layout/activity_login.xml"
+    },
+    {
+        "merged": "edu.joverpenalva.proyectomoviles.app-mergeDebugResources-39:/layout/activity_main.xml",
+        "source": "edu.joverpenalva.proyectomoviles.app-main-42:/layout/activity_main.xml"
+    },
+    {
+        "merged": "edu.joverpenalva.proyectomoviles.app-mergeDebugResources-39:/layout/activity_detail_pendiente.xml",
+        "source": "edu.joverpenalva.proyectomoviles.app-main-42:/layout/activity_detail_pendiente.xml"
+    },
+    {
+        "merged": "edu.joverpenalva.proyectomoviles.app-mergeDebugResources-39:/layout/trabajador_layout.xml",
+        "source": "edu.joverpenalva.proyectomoviles.app-main-42:/layout/trabajador_layout.xml"
+    },
+    {
+        "merged": "edu.joverpenalva.proyectomoviles.app-mergeDebugResources-39:/layout/activity_detail_finalizada.xml",
+        "source": "edu.joverpenalva.proyectomoviles.app-main-42:/layout/activity_detail_finalizada.xml"
+    }
+]
