@@ -4,6 +4,10 @@ import android.content.Context.CONNECTIVITY_SERVICE
 import android.content.Context
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
+import edu.joverpenalva.proyectomoviles.model.trabajos.Result
+
+val trabajosList: MutableList<Result> = mutableListOf()
+var usuario: edu.joverpenalva.proyectomoviles.model.trabajadores.Result? = null
 
 fun checkConnection(context: Context): Boolean {
     val cm = context.getSystemService(CONNECTIVITY_SERVICE) as ConnectivityManager

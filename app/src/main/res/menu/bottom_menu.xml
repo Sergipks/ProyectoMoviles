@@ -2,9 +2,9 @@
     <item
         android:id="@+id/action_pending"
         android:icon="@drawable/pendiente"
-        android:title="Pendientes" />
+        android:title="@string/pendientes" />
     <item
         android:id="@+id/action_finished"
         android:icon="@drawable/finalizado"
-        android:title="Finalizados" />
+        android:title="@string/finalizados" />
 </menu>
