@@ -22,5 +22,6 @@
     <string name="txt_noConnection">No hay conexión a internet</string>
     <string name="pendientes">Pendientes</string>
     <string name="finalizados">Finalizados</string>
+    <string name="logout">Logout</string>
 
 </resources>

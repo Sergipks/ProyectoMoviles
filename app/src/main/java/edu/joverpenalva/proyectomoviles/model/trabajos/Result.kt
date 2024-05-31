@@ -2,6 +2,7 @@ package edu.joverpenalva.proyectomoviles.model.trabajos
 
 
 import com.google.gson.annotations.SerializedName
+import java.math.BigDecimal
 
 data class Result(
     @SerializedName("categoria")
@@ -19,5 +20,5 @@ data class Result(
     @SerializedName("prioridad")
     val prioridad: Int,
     @SerializedName("tiempo")
-    val tiempo: Any?
+    val tiempo: BigDecimal?
 )
