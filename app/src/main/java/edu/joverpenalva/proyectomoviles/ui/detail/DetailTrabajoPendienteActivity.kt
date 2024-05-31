@@ -68,7 +68,7 @@ class DetailTrabajoPendienteActivity : AppCompatActivity() {
 
         binding.tvPrioridad.text = trabajo.prioridad.toString()
 
-        binding.btnFinalizar.isEnabled = binding.tiedTiempo.text == null
+        binding.btnFinalizar.isEnabled = binding.tiedTiempo.text.toString() != ""
 
         binding.btnFinalizar.setOnClickListener {
             val tiempoStr = binding.tiedTiempo.text.toString()
