@@ -32,15 +32,18 @@ class LoginActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         getTrabajador()
-        val intent = Intent(this, MainActivity::class.java)
         setTheme(R.style.Theme_ProyectoMoviles)
 
         super.onCreate(savedInstanceState)
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        if(trabajador != null)
+        val intent = Intent(this, MainActivity::class.java)
+
+        if(trabajador != null) {
             startActivity(intent)
+            finish()
+        }
 
         // Deshabilitar el botón inicialmente
         binding.btnAcceder.isEnabled = false
@@ -75,12 +78,12 @@ class LoginActivity : AppCompatActivity() {
             // Lógica de autenticación
             if (trabajador != null ) {
 
-                if(binding.cbRecordar.isActivated)
+                if(binding.cbRecordar.isChecked)
                     vm.saveUser(trabajador)
 
                 // Iniciar MainActivity
                 startActivity(intent)
-                finish()
+                this.finish()
             } else {
                 Toast.makeText(this, "Usuario o contraseña incorrectos", Toast.LENGTH_SHORT).show()
             }
