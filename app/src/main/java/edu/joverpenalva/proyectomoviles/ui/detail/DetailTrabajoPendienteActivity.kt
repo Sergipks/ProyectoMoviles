@@ -53,7 +53,7 @@ class DetailTrabajoPendienteActivity : AppCompatActivity() {
         getTrabajo()
 
         binding.tvCodTrabajo.text = trabajo.codTrabajo
-        binding.tvFecIni.text = trabajo.fechaFin
+        binding.tvFecIni.text = trabajo.fechaInicio
         binding.tvCategoria.text = trabajo.categoria
         binding.tvDescripcion.text = trabajo.descripcion
 
@@ -96,6 +96,7 @@ class DetailTrabajoPendienteActivity : AppCompatActivity() {
                 // Llamar al método finalizarTrabajo con el valor de BigDecimal
                 lifecycleScope.launch {
                     vm.repository.finalizarTrabajo(trabajo.codTrabajo, tiempoBigDecimal)
+                    finish()
                 }
             } catch (e: NumberFormatException) {
                 // Manejar el error si el valor ingresado no es un número válido

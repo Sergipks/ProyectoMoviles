@@ -96,6 +96,20 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    override fun onResume() {
+        super.onResume()
+
+        // Verificar qué ítem de navegación está seleccionado actualmente
+        when (binding.bottomNav.selectedItemId) {
+            R.id.action_pending -> {
+                fetchPendingJobs()
+            }
+            R.id.action_finished -> {
+                fetchFinishedJobs()
+            }
+        }
+    }
+
     private fun toggleSortOrder() {
         val sortedList = if (isSortedAscending) {
             adapter.currentList.sortedByDescending { it.prioridad }
