@@ -1,0 +1,2 @@
+edu.joverpenalva.proyectomoviles.test:style/WhiteBackgroundTheme = 0x7f010001
+edu.joverpenalva.proyectomoviles.test:style/WhiteBackgroundDialogTheme = 0x7f010000
