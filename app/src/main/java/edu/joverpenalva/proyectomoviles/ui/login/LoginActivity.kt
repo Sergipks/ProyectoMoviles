@@ -16,6 +16,7 @@ import edu.joverpenalva.proyectomoviles.TrabajadorApplication
 import edu.joverpenalva.proyectomoviles.checkConnection
 import edu.joverpenalva.proyectomoviles.model.trabajadores.Result
 import edu.joverpenalva.proyectomoviles.ui.main.MainActivity
+import edu.joverpenalva.proyectomoviles.usuario
 import kotlinx.coroutines.launch
 
 class LoginActivity : AppCompatActivity() {
@@ -41,6 +42,7 @@ class LoginActivity : AppCompatActivity() {
         val intent = Intent(this, MainActivity::class.java)
 
         if(trabajador != null) {
+            usuario = trabajador
             startActivity(intent)
             finish()
         }
@@ -81,6 +83,7 @@ class LoginActivity : AppCompatActivity() {
                 if(binding.cbRecordar.isChecked)
                     vm.saveUser(trabajador)
 
+                usuario = trabajador
                 // Iniciar MainActivity
                 startActivity(intent)
                 this.finish()

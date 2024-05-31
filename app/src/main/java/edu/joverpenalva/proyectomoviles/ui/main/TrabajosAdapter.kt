@@ -11,7 +11,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import edu.joverpenalva.proyectomoviles.databinding.TrabajadorLayoutBinding
+import edu.joverpenalva.proyectomoviles.databinding.TrabajoLayoutBinding
 import edu.joverpenalva.proyectomoviles.model.trabajos.Result
 
 class TrabajosAdapter(
@@ -20,7 +20,7 @@ class TrabajosAdapter(
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TrabajosViewHolder {
         return TrabajosViewHolder(
-            TrabajadorLayoutBinding.inflate(
+            TrabajoLayoutBinding.inflate(
                 LayoutInflater.from(parent.context),
                 parent,
                 false
@@ -33,7 +33,7 @@ class TrabajosAdapter(
     }
 
     inner class TrabajosViewHolder(view: View): RecyclerView.ViewHolder(view) {
-        val bind = TrabajadorLayoutBinding.bind(view)
+        val bind = TrabajoLayoutBinding.bind(view)
         fun bind(trabajo: Result){
             bind.tvCodTrabajo.text = trabajo.codTrabajo
             bind.tvDescripcion.text = trabajo.descripcion

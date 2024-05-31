@@ -107,7 +107,6 @@ class MainActivity : AppCompatActivity() {
         adapter.submitList(emptyList())
         if (checkConnection(this)) {
             binding.swipeRefresh.isRefreshing = true
-            viewModel.fetchTrabajos()
             lifecycleScope.launch {
                 viewModel.trabajosPendientes.collect { trabajos ->
                     adapter.submitList(trabajos)
@@ -128,7 +127,6 @@ class MainActivity : AppCompatActivity() {
         adapter.submitList(emptyList())
         if (checkConnection(this)) {
             binding.swipeRefresh.isRefreshing = true
-            viewModel.fetchTrabajos()
             lifecycleScope.launch {
                 viewModel.trabajosFinalizados.collect { trabajos ->
                     adapter.submitList(trabajos)

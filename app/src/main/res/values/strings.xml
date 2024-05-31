@@ -20,5 +20,7 @@
     <string name="txt_fec_fin">Fecha de finalización</string>
     <string name="txt_prioridad">Prioridad del trabajo</string>
     <string name="txt_noConnection">No hay conexión a internet</string>
+    <string name="pendientes">Pendientes</string>
+    <string name="finalizados">Finalizados</string>
 
 </resources>
