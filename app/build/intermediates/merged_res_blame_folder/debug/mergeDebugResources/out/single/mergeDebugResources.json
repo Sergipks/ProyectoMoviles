@@ -1,7 +1,15 @@
 [
     {
+        "merged": "edu.joverpenalva.proyectomoviles.app-debug-40:/drawable_finalizado.png.flat",
+        "source": "edu.joverpenalva.proyectomoviles.app-main-42:/drawable/finalizado.png"
+    },
+    {
         "merged": "edu.joverpenalva.proyectomoviles.app-debug-40:/drawable_ic_launcher_background.xml.flat",
         "source": "edu.joverpenalva.proyectomoviles.app-main-42:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "edu.joverpenalva.proyectomoviles.app-debug-40:/layout_trabajo_layout.xml.flat",
+        "source": "edu.joverpenalva.proyectomoviles.app-main-42:/layout/trabajo_layout.xml"
     },
     {
         "merged": "edu.joverpenalva.proyectomoviles.app-debug-40:/mipmap-xhdpi_ic_launcher.webp.flat",
@@ -40,6 +48,10 @@
         "source": "edu.joverpenalva.proyectomoviles.app-main-42:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
+        "merged": "edu.joverpenalva.proyectomoviles.app-debug-40:/drawable_pendiente.png.flat",
+        "source": "edu.joverpenalva.proyectomoviles.app-main-42:/drawable/pendiente.png"
+    },
+    {
         "merged": "edu.joverpenalva.proyectomoviles.app-debug-40:/mipmap-hdpi_ic_launcher_round.webp.flat",
         "source": "edu.joverpenalva.proyectomoviles.app-main-42:/mipmap-hdpi/ic_launcher_round.webp"
     },
@@ -72,6 +84,10 @@
         "source": "edu.joverpenalva.proyectomoviles.app-main-42:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
+        "merged": "edu.joverpenalva.proyectomoviles.app-debug-40:/menu_toolbar_menu.xml.flat",
+        "source": "edu.joverpenalva.proyectomoviles.app-main-42:/menu/toolbar_menu.xml"
+    },
+    {
         "merged": "edu.joverpenalva.proyectomoviles.app-debug-40:/menu_bottom_menu.xml.flat",
         "source": "edu.joverpenalva.proyectomoviles.app-main-42:/menu/bottom_menu.xml"
     },
@@ -86,10 +102,6 @@
     {
         "merged": "edu.joverpenalva.proyectomoviles.app-debug-40:/drawable_ic_launcher_foreground.xml.flat",
         "source": "edu.joverpenalva.proyectomoviles.app-main-42:/drawable/ic_launcher_foreground.xml"
-    },
-    {
-        "merged": "edu.joverpenalva.proyectomoviles.app-debug-40:/layout_trabajador_layout.xml.flat",
-        "source": "edu.joverpenalva.proyectomoviles.app-main-42:/layout/trabajador_layout.xml"
     },
     {
         "merged": "edu.joverpenalva.proyectomoviles.app-debug-40:/drawable_splash_background.xml.flat",

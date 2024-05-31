@@ -1,12 +1,12 @@
-#Fri May 31 02:47:38 CEST 2024
-base.0=/Users/sergipks/Documents/2DAMDAW/Moviles/ProyectosMoviles/ProyectoMoviles/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
-base.1=/Users/sergipks/Documents/2DAMDAW/Moviles/ProyectosMoviles/ProyectoMoviles/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
-base.2=/Users/sergipks/Documents/2DAMDAW/Moviles/ProyectosMoviles/ProyectoMoviles/app/build/intermediates/dex/debug/mergeProjectDexDebug/1/classes.dex
-base.3=/Users/sergipks/Documents/2DAMDAW/Moviles/ProyectosMoviles/ProyectoMoviles/app/build/intermediates/dex/debug/mergeProjectDexDebug/5/classes.dex
-base.4=/Users/sergipks/Documents/2DAMDAW/Moviles/ProyectosMoviles/ProyectoMoviles/app/build/intermediates/dex/debug/mergeProjectDexDebug/7/classes.dex
-base.5=/Users/sergipks/Documents/2DAMDAW/Moviles/ProyectosMoviles/ProyectoMoviles/app/build/intermediates/dex/debug/mergeProjectDexDebug/8/classes.dex
-base.6=/Users/sergipks/Documents/2DAMDAW/Moviles/ProyectosMoviles/ProyectoMoviles/app/build/intermediates/dex/debug/mergeProjectDexDebug/9/classes.dex
-base.7=/Users/sergipks/Documents/2DAMDAW/Moviles/ProyectosMoviles/ProyectoMoviles/app/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
+#Fri May 31 14:18:36 CEST 2024
+base.0=/Users/jorgejoverpenalva/Documents/DamDaw/Moviles/ProyectoMoviles/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+base.1=/Users/jorgejoverpenalva/Documents/DamDaw/Moviles/ProyectoMoviles/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
+base.2=/Users/jorgejoverpenalva/Documents/DamDaw/Moviles/ProyectoMoviles/app/build/intermediates/dex/debug/mergeProjectDexDebug/1/classes.dex
+base.3=/Users/jorgejoverpenalva/Documents/DamDaw/Moviles/ProyectoMoviles/app/build/intermediates/dex/debug/mergeProjectDexDebug/5/classes.dex
+base.4=/Users/jorgejoverpenalva/Documents/DamDaw/Moviles/ProyectoMoviles/app/build/intermediates/dex/debug/mergeProjectDexDebug/7/classes.dex
+base.5=/Users/jorgejoverpenalva/Documents/DamDaw/Moviles/ProyectoMoviles/app/build/intermediates/dex/debug/mergeProjectDexDebug/8/classes.dex
+base.6=/Users/jorgejoverpenalva/Documents/DamDaw/Moviles/ProyectoMoviles/app/build/intermediates/dex/debug/mergeProjectDexDebug/9/classes.dex
+base.7=/Users/jorgejoverpenalva/Documents/DamDaw/Moviles/ProyectoMoviles/app/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=1/classes.dex

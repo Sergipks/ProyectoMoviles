@@ -5,6 +5,8 @@
     <color name="light_grey">#D3D3D3</color>
     <color name="white">#FFFFFFFF</color>
     <string name="app_name">ProyectoMoviles</string>
+    <string name="finalizados">Finalizados</string>
+    <string name="pendientes">Pendientes</string>
     <string name="subtitle_finalizados">Finalizados</string>
     <string name="subtitle_pendientes">Pendientes</string>
     <string name="title">Trabajos</string>
@@ -29,6 +31,7 @@
         
         
         <item name="colorPrimary">@color/grey</item>
+        <item name="colorOnPrimary">@color/white</item>
 
     </style>
     <style name="OverlayToolbar" parent="ThemeOverlay.MaterialComponents.Toolbar.Primary">

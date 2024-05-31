@@ -23,7 +23,7 @@ interface Retrofit2ApiInterface {
     suspend fun getTrabajadores(): Trabajadores
 
     @GET("trabajos/pendientes/trabajador") // http:localhost:8080/api/trabajos/pendientes/trabajador?idTrabajador=11111&contraseña=1234
-    suspend fun getTrabajosPendientes(@Query("trabajador") idTrabajador: String, @Query("contraseña") password: String): Trabajos
+    suspend fun getTrabajosPendientes(@Query("idTrabajador") idTrabajador: String, @Query("contraseña") password: String): Trabajos
 
     @GET("trabajos/finalizados/trabajador") // http:localhost:8080/api/trabajos/finalizados/trabajador?idTrabajador=11111&contraseña=1234
     suspend fun getTrabajosFinalizados(@Query("idTrabajador") idTrabajador: String, @Query("contraseña") password: String): Trabajos

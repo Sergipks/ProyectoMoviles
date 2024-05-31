@@ -4,6 +4,7 @@ import android.app.ActivityOptions
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
+import android.text.*
 import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
@@ -66,9 +67,24 @@ class DetailTrabajoPendienteActivity : AppCompatActivity() {
             binding.tvPrioridad.setTextColor(Color.GREEN)
         }
 
+        binding.btnFinalizar.isEnabled = false
+
+        // TextWatcher para monitorear cambios en los campos de texto
+        val textWatcher = object : TextWatcher {
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
+
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                // Habilitar o deshabilitar el botón dependiendo del contenido de los campos
+                binding.btnFinalizar.isEnabled = binding.tiedTiempo.text.toString().isNotEmpty()
+            }
+
+            override fun afterTextChanged(s: Editable?) {}
+        }
+
         binding.tvPrioridad.text = trabajo.prioridad.toString()
 
-        binding.btnFinalizar.isEnabled = binding.tiedTiempo.text.toString() != ""
+        // Añadir el TextWatcher a ambos campos
+        binding.tiedTiempo.addTextChangedListener(textWatcher)
 
         binding.btnFinalizar.setOnClickListener {
             val tiempoStr = binding.tiedTiempo.text.toString()

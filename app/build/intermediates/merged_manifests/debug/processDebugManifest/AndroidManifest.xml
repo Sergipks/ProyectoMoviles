@@ -42,7 +42,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="edu.joverpenalva.proyectomoviles.ui.main.MainActivity" />
+        <activity
+            android:name="edu.joverpenalva.proyectomoviles.ui.main.MainActivity"
+            android:exported="true" />
+        <activity
+            android:name="edu.joverpenalva.proyectomoviles.ui.detail.DetailTrabajoPendienteActivity"
+            android:exported="false"
+            android:parentActivityName="edu.joverpenalva.proyectomoviles.ui.main.MainActivity" />
 
         <service
             android:name="androidx.room.MultiInstanceInvalidationService"

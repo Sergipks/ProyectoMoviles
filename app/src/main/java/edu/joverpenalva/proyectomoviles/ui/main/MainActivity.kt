@@ -2,6 +2,7 @@ package edu.joverpenalva.proyectomoviles.ui.main
 
 import android.content.pm.ActivityInfo
 import android.os.Bundle
+import android.util.*
 import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
@@ -106,11 +107,13 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun fetchPendingJobs() {
+        Log.d("MainActivity", "fetchPendingJobs() called")
         adapter.submitList(emptyList())
         if (checkConnection(this)) {
             binding.swipeRefresh.isRefreshing = true
             lifecycleScope.launch {
                 viewModel.trabajosPendientes.collect { trabajos ->
+                    Log.d("MainActivity", "Número de trabajos recuperados: ${trabajos.size}")
                     adapter.submitList(trabajos)
                     trabajosPendientesList.addAll(trabajos)
                 }

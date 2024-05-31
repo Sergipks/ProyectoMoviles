@@ -1,7 +1,7 @@
-#Fri May 31 02:37:57 CEST 2024
-base.0=/Users/sergipks/Documents/2DAMDAW/Moviles/ProyectosMoviles/ProyectoMoviles/app/build/intermediates/dex/debugAndroidTest/mergeExtDexDebugAndroidTest/classes.dex
-base.1=/Users/sergipks/Documents/2DAMDAW/Moviles/ProyectosMoviles/ProyectoMoviles/app/build/intermediates/dex/debugAndroidTest/mergeProjectDexDebugAndroidTest/0/classes.dex
-base.2=/Users/sergipks/Documents/2DAMDAW/Moviles/ProyectosMoviles/ProyectoMoviles/app/build/intermediates/dex/debugAndroidTest/mergeProjectDexDebugAndroidTest/8/classes.dex
+#Fri May 31 11:56:44 CEST 2024
+base.0=/Users/jorgejoverpenalva/Documents/DamDaw/Moviles/ProyectoMoviles/app/build/intermediates/dex/debugAndroidTest/mergeExtDexDebugAndroidTest/classes.dex
+base.1=/Users/jorgejoverpenalva/Documents/DamDaw/Moviles/ProyectoMoviles/app/build/intermediates/dex/debugAndroidTest/mergeProjectDexDebugAndroidTest/0/classes.dex
+base.2=/Users/jorgejoverpenalva/Documents/DamDaw/Moviles/ProyectoMoviles/app/build/intermediates/dex/debugAndroidTest/mergeProjectDexDebugAndroidTest/8/classes.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=8/classes.dex

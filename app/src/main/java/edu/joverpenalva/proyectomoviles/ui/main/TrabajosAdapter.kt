@@ -5,6 +5,7 @@ import android.graphics.Color
 import android.graphics.Color.GREEN
 import android.graphics.Color.RED
 import android.graphics.Color.YELLOW
+import android.util.*
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -29,7 +30,9 @@ class TrabajosAdapter(
     }
 
     override fun onBindViewHolder(holder: TrabajosViewHolder, position: Int) {
-        holder.bind(getItem(position))
+        val currentItem = getItem(position)
+        Log.d("TrabajosAdapter", "Elemento en la posición $position: $currentItem")
+        holder.bind(currentItem)
     }
 
     inner class TrabajosViewHolder(view: View): RecyclerView.ViewHolder(view) {

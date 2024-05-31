@@ -1,0 +1,6 @@
+edu.joverpenalva.proyectomoviles.test.app-annotation-experimental-1.3.0-0 /Users/jorgejoverpenalva/.gradle/caches/transforms-4/17bb6204f65f91110361e81dfcbc2fb2/transformed/annotation-experimental-1.3.0/res
+edu.joverpenalva.proyectomoviles.test.app-core-1.5.0-1 /Users/jorgejoverpenalva/.gradle/caches/transforms-4/e3faf09acde3d4856306e34b67d51d1d/transformed/core-1.5.0/res
+edu.joverpenalva.proyectomoviles.test.app-androidTest-2 /Users/jorgejoverpenalva/Documents/DamDaw/Moviles/ProyectoMoviles/app/build/generated/res/resValues/androidTest/debug
+edu.joverpenalva.proyectomoviles.test.app-mergeDebugAndroidTestResources-3 /Users/jorgejoverpenalva/Documents/DamDaw/Moviles/ProyectoMoviles/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+edu.joverpenalva.proyectomoviles.test.app-mergeDebugAndroidTestResources-4 /Users/jorgejoverpenalva/Documents/DamDaw/Moviles/ProyectoMoviles/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+edu.joverpenalva.proyectomoviles.test.app-debugAndroidTest-5 /Users/jorgejoverpenalva/Documents/DamDaw/Moviles/ProyectoMoviles/app/build/intermediates/merged_res/debugAndroidTest/mergeDebugAndroidTestResources

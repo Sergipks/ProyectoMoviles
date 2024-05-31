@@ -4,7 +4,6 @@ package edu.joverpenalva.proyectomoviles.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ProgressBar;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
@@ -34,9 +33,6 @@ public final class ActivityMainBinding implements ViewBinding {
   public final MaterialToolbar mToolbar;
 
   @NonNull
-  public final ProgressBar progressBar;
-
-  @NonNull
   public final RecyclerView recycler;
 
   @NonNull
@@ -44,13 +40,12 @@ public final class ActivityMainBinding implements ViewBinding {
 
   private ActivityMainBinding(@NonNull CoordinatorLayout rootView,
       @NonNull AppBarLayout appBarLayout, @NonNull BottomNavigationView bottomNav,
-      @NonNull MaterialToolbar mToolbar, @NonNull ProgressBar progressBar,
-      @NonNull RecyclerView recycler, @NonNull SwipeRefreshLayout swipeRefresh) {
+      @NonNull MaterialToolbar mToolbar, @NonNull RecyclerView recycler,
+      @NonNull SwipeRefreshLayout swipeRefresh) {
     this.rootView = rootView;
     this.appBarLayout = appBarLayout;
     this.bottomNav = bottomNav;
     this.mToolbar = mToolbar;
-    this.progressBar = progressBar;
     this.recycler = recycler;
     this.swipeRefresh = swipeRefresh;
   }
@@ -100,12 +95,6 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.progressBar;
-      ProgressBar progressBar = ViewBindings.findChildViewById(rootView, id);
-      if (progressBar == null) {
-        break missingId;
-      }
-
       id = R.id.recycler;
       RecyclerView recycler = ViewBindings.findChildViewById(rootView, id);
       if (recycler == null) {
@@ -119,7 +108,7 @@ public final class ActivityMainBinding implements ViewBinding {
       }
 
       return new ActivityMainBinding((CoordinatorLayout) rootView, appBarLayout, bottomNav,
-          mToolbar, progressBar, recycler, swipeRefresh);
+          mToolbar, recycler, swipeRefresh);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
