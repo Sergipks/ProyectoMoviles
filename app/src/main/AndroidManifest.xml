@@ -29,6 +29,11 @@
         </activity>
 
         <activity android:name=".ui.main.MainActivity" />
+
+        <activity
+            android:parentActivityName=".ui.main.MainActivity"
+            android:name=".ui.detail.DetailTrabajoPendienteActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
