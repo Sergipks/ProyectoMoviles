@@ -6,7 +6,8 @@ import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
 import edu.joverpenalva.proyectomoviles.model.trabajos.Result
 
-val trabajosList: MutableList<Result> = mutableListOf()
+val trabajosPendientesList: MutableList<Result> = mutableListOf()
+val trabajosFinalizadosList: MutableList<Result> = mutableListOf()
 var usuario: edu.joverpenalva.proyectomoviles.model.trabajadores.Result? = null
 
 fun checkConnection(context: Context): Boolean {

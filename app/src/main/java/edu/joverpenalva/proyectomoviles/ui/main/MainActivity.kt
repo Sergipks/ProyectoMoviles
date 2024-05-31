@@ -10,6 +10,8 @@ import edu.joverpenalva.proyectomoviles.R
 import edu.joverpenalva.proyectomoviles.TrabajadorApplication
 import edu.joverpenalva.proyectomoviles.checkConnection
 import edu.joverpenalva.proyectomoviles.databinding.ActivityMainBinding
+import edu.joverpenalva.proyectomoviles.trabajosFinalizadosList
+import edu.joverpenalva.proyectomoviles.trabajosPendientesList
 import edu.joverpenalva.proyectomoviles.ui.detail.DetailTrabajoFinalizadoActivity
 import edu.joverpenalva.proyectomoviles.ui.detail.DetailTrabajoPendienteActivity
 import kotlinx.coroutines.flow.collect
@@ -110,6 +112,7 @@ class MainActivity : AppCompatActivity() {
             lifecycleScope.launch {
                 viewModel.trabajosPendientes.collect { trabajos ->
                     adapter.submitList(trabajos)
+                    trabajosPendientesList.addAll(trabajos)
                 }
             }
             binding.swipeRefresh.isRefreshing = false
@@ -130,6 +133,7 @@ class MainActivity : AppCompatActivity() {
             lifecycleScope.launch {
                 viewModel.trabajosFinalizados.collect { trabajos ->
                     adapter.submitList(trabajos)
+                    trabajosFinalizadosList.addAll(trabajos)
                 }
             }
             binding.swipeRefresh.isRefreshing = false

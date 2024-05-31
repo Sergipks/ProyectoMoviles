@@ -80,8 +80,9 @@ class LoginActivity : AppCompatActivity() {
             // Lógica de autenticación
             if (trabajador != null ) {
 
-                if(binding.cbRecordar.isChecked)
+                if(binding.cbRecordar.isChecked){
                     vm.saveUser(trabajador)
+                }
 
                 usuario = trabajador
                 // Iniciar MainActivity

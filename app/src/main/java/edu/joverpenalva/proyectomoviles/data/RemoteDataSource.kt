@@ -19,6 +19,7 @@ class RemoteDataSource {
         return api.getTrabajosFinalizados(idTrabajador, password).result
     }
 
+
     suspend fun finalizarTrabajo(codTrabajo: String, tiempo: BigDecimal): Trabajo {
         return api.finalizarTrabajo(codTrabajo, tiempo).result
     }
