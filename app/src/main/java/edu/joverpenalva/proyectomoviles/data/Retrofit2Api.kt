@@ -7,7 +7,7 @@ import retrofit2.http.*
 
 class Retrofit2Api {
     companion object {
-        const val BASE_URL = "http://localhost:8080/api/"
+        const val BASE_URL = "http://192.168.0.24:8080/api/"
         fun getRetrofit2Api(): Retrofit2ApiInterface {
             return Retrofit.Builder().baseUrl(BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create()).build()
