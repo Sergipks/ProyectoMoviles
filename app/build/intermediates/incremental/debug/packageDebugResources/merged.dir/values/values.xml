@@ -5,7 +5,26 @@
     <color name="light_grey">#D3D3D3</color>
     <color name="white">#FFFFFFFF</color>
     <string name="app_name">ProyectoMoviles</string>
-    <string name="subtitle">Trabajos</string>
+    <string name="subtitle_finalizados">Finalizados</string>
+    <string name="subtitle_pendientes">Pendientes</string>
+    <string name="title">Trabajos</string>
+    <string name="txt_acceder">Acceder</string>
+    <string name="txt_categoria">Categoria</string>
+    <string name="txt_cod_trabajo">Código trabajo</string>
+    <string name="txt_descripcion">Descripción</string>
+    <string name="txt_fec_fin">Fecha de finalización</string>
+    <string name="txt_fec_ini">Fecha de inicio</string>
+    <string name="txt_finalizar">Finalizar trabajo</string>
+    <string name="txt_id_trabajador">Introduce tu ID</string>
+    <string name="txt_introduce_password">Introduce tu contraseña</string>
+    <string name="txt_login">Login:</string>
+    <string name="txt_noConnection">No hay conexión a internet</string>
+    <string name="txt_opt_ordenar_prioridad">Ordenar por prioridad</string>
+    <string name="txt_opt_seleccionar_prioridad">Selecciona una prioridad</string>
+    <string name="txt_password">Contraseña:</string>
+    <string name="txt_prioridad">Prioridad del trabajo</string>
+    <string name="txt_recordar">Recordar usuario</string>
+    <string name="txt_tiempo">Tiempo empleado</string>
     <style name="Base.Theme.ProyectoMoviles" parent="Theme.Material3.DayNight.NoActionBar">
         
         
@@ -15,6 +34,9 @@
     <style name="OverlayToolbar" parent="ThemeOverlay.MaterialComponents.Toolbar.Primary">
         
         <item name="colorOnPrimary">@color/white</item>
+    </style>
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_background</item>
     </style>
     <style name="Theme.ProyectoMoviles" parent="Base.Theme.ProyectoMoviles"/>
 </resources>
