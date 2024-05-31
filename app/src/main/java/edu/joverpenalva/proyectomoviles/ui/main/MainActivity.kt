@@ -36,8 +36,32 @@ class MainActivity : AppCompatActivity() {
         // Bloqueo de la rotación
         requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_NOSENSOR
 
+        binding.recycler.adapter = adapter
         // Se infla el menú en la Toolbar
         binding.mToolbar.inflateMenu(R.menu.toolbar_menu)
+
+        // Inflado del menú en la BottomNavigationView
+        binding.bottomNav.inflateMenu(R.menu.bottom_menu)
+
+        // Fetch initial data
+        fetchPendingJobs()
+    }
+
+    override fun onStart() {
+        super.onStart()
+
+        binding.swipeRefresh.setOnRefreshListener {
+            // Verificar qué ítem de navegación está seleccionado actualmente
+            when (binding.bottomNav.selectedItemId) {
+                R.id.action_pending -> {
+                    fetchPendingJobs()
+                }
+                R.id.action_finished -> {
+                    fetchFinishedJobs()
+                }
+            }
+        }
+
         binding.mToolbar.setOnMenuItemClickListener { item ->
             when (item.itemId) {
                 R.id.opt_ordenar_prioridad -> {
@@ -47,9 +71,6 @@ class MainActivity : AppCompatActivity() {
                 else -> false
             }
         }
-
-        // Inflado del menú en la BottomNavigationView
-        binding.bottomNav.inflateMenu(R.menu.bottom_menu)
 
         // Configurar el BottomNavigationView
         binding.bottomNav.setOnNavigationItemSelectedListener { item ->
@@ -65,9 +86,6 @@ class MainActivity : AppCompatActivity() {
                 else -> false
             }
         }
-
-        // Fetch initial data
-        fetchPendingJobs()
     }
 
     private fun toggleSortOrder() {
