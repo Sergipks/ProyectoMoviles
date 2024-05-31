@@ -5,6 +5,6 @@
     <item>
         <bitmap
             android:gravity="center"
-            android:src="@drawable/finalizado" />
+            android:src="@drawable/red_marker" />
     </item>
 </layer-list>

@@ -36,6 +36,11 @@
             android:parentActivityName=".ui.main.MainActivity"
             android:name=".ui.detail.DetailTrabajoPendienteActivity"
             android:exported="false" />
+
+        <activity
+            android:parentActivityName=".ui.main.MainActivity"
+            android:name=".ui.detail.DetailTrabajoFinalizadoActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
