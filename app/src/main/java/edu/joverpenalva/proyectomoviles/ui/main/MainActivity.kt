@@ -10,6 +10,8 @@ import edu.joverpenalva.proyectomoviles.R
 import edu.joverpenalva.proyectomoviles.TrabajadorApplication
 import edu.joverpenalva.proyectomoviles.checkConnection
 import edu.joverpenalva.proyectomoviles.databinding.ActivityMainBinding
+import edu.joverpenalva.proyectomoviles.ui.detail.DetailTrabajoFinalizadoActivity
+import edu.joverpenalva.proyectomoviles.ui.detail.DetailTrabajoPendienteActivity
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 
@@ -21,7 +23,10 @@ class MainActivity : AppCompatActivity() {
 
     private val adapter = TrabajosAdapter(
         onClickTrabajo = {
-            // DetailTrabajoActivity.navigate(this@MainActivity, it)
+            if (it.fechaFin == null)
+                DetailTrabajoPendienteActivity.navigate(this@MainActivity, it.codTrabajo)
+            else
+                DetailTrabajoFinalizadoActivity.navigate(this@MainActivity, it.codTrabajo)
         }
     )
 
