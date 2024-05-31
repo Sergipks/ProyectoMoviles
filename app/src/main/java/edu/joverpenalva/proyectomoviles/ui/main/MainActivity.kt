@@ -10,6 +10,7 @@ import edu.joverpenalva.proyectomoviles.R
 import edu.joverpenalva.proyectomoviles.TrabajadorApplication
 import edu.joverpenalva.proyectomoviles.checkConnection
 import edu.joverpenalva.proyectomoviles.databinding.ActivityMainBinding
+import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity() {
@@ -20,9 +21,12 @@ class MainActivity : AppCompatActivity() {
 
     private val adapter = TrabajosAdapter(
         onClickTrabajo = {
-            //DetailTrabajoActivity.navigate(this@MainActivity, it)
+            // DetailTrabajoActivity.navigate(this@MainActivity, it)
         }
     )
+
+    // Variable para alternar el estado de ordenación
+    private var isSortedAscending = true
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,9 +38,18 @@ class MainActivity : AppCompatActivity() {
 
         // Se infla el menú en la Toolbar
         binding.mToolbar.inflateMenu(R.menu.toolbar_menu)
+        binding.mToolbar.setOnMenuItemClickListener { item ->
+            when (item.itemId) {
+                R.id.opt_ordenar_prioridad -> {
+                    toggleSortOrder()
+                    true
+                }
+                else -> false
+            }
+        }
 
         // Inflado del menú en la BottomNavigationView
-        binding.bottomNav.inflateMenu(R.menu.toolbar_menu)
+        binding.bottomNav.inflateMenu(R.menu.bottom_menu)
 
         // Configurar el BottomNavigationView
         binding.bottomNav.setOnNavigationItemSelectedListener { item ->
@@ -55,7 +68,16 @@ class MainActivity : AppCompatActivity() {
 
         // Fetch initial data
         fetchPendingJobs()
+    }
 
+    private fun toggleSortOrder() {
+        val sortedList = if (isSortedAscending) {
+            adapter.currentList.sortedByDescending { it.prioridad }
+        } else {
+            adapter.currentList.sortedBy { it.prioridad }
+        }
+        adapter.submitList(sortedList)
+        isSortedAscending = !isSortedAscending
     }
 
     private fun fetchPendingJobs() {
