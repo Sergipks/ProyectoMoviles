@@ -31,12 +31,13 @@ class LoginActivity : AppCompatActivity() {
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        getTrabajador()
+        val intent = Intent(this, MainActivity::class.java)
+        setTheme(R.style.Theme_ProyectoMoviles)
+
         super.onCreate(savedInstanceState)
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        getTrabajador()
-        val intent = Intent(this, MainActivity::class.java)
 
         if(trabajador != null)
             startActivity(intent)
