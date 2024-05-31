@@ -3,7 +3,11 @@ package edu.joverpenalva.proyectomoviles.ui.detail
 import android.app.ActivityOptions
 import android.content.Intent
 import android.os.Bundle
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import edu.joverpenalva.proyectomoviles.TrabajadorApplication
+import edu.joverpenalva.proyectomoviles.data.RemoteDataSource
+import edu.joverpenalva.proyectomoviles.data.Repository
 import edu.joverpenalva.proyectomoviles.databinding.ActivityDetailFinalizadaBinding
 import edu.joverpenalva.proyectomoviles.databinding.ActivityDetailPendienteBinding
 
@@ -22,6 +26,14 @@ class DetailTrabajoFinalizadoActivity : AppCompatActivity() {
                 ActivityOptions.makeSceneTransitionAnimation(activity).toBundle()
             )
         }
+    }
+
+    private val vm: DetailViewModel by viewModels {
+        val db = (application as TrabajadorApplication).trabajadorDB
+        val dataSource = RemoteDataSource()
+        val repository = Repository(db, dataSource)
+        val codTrabajo = intent.getStringExtra(DetailTrabajoPendienteActivity.TRABAJO_COD)
+        DetailViewModelFactory(repository, codTrabajo!!)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
